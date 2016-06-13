@@ -9,18 +9,12 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html{
-	position: relative;
-    min-height: 100%;
-}
-
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #555;
-    margin: 0 0 260px; 
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -89,7 +83,6 @@ a:after {
     padding: 0;
 }
 
-
 .navbar {
 	text-transform: uppercase;
 	margin-bottom: 0px;
@@ -155,11 +148,6 @@ a:after {
 
 
 #footer {
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 260px;
-    width: 100%;
 	background-color: #2f2f2f;
 	padding-top: 50px;
 	padding-bottom: 50px; 
@@ -215,6 +203,10 @@ ba {
 /* Blog Tags */
 bt {
 	font-size: 12px;
+}
+
+.detail-btn{
+	padding-top:;
 }
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
