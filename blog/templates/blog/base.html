@@ -35,6 +35,7 @@
             {% if user.is_authenticated %}
             <li><a href="{% url 'post_new' %}" class="top-menu">New Post</a></li>
             <li><a href="{% url 'post_draft_list' %}" class="top-menu">Drafts</a></li>
+            <li><a href="{% url 'about' %}" class="top-menu">About</a></li>
             <li><a href="{% url 'admin:index' %}" class="top-menu">Admin</a></li>
             <li><a href="{% url 'logout' %}" class="top-menu">Logout</a></li>
             {% else %}
@@ -74,7 +75,7 @@
                 
                 <div class="col-lg-4">
                     <h4>About Me</h4>
-                    <p>I get ignored so often that my nickname should be "Terms and Conditions".</p>
+                    <p> Chocolate cake lemon drops pie brownie brownie bonbon brownie pie bear claw. Powder bonbon tart.</p>
                 </div><!-- /col-lg-4 -->
             
             </div>

@@ -86,3 +86,7 @@ def comment_remove(request, pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('blog.views.post_detail', pk=post_pk)
+
+@login_required(login_url="login/")
+def home(request):
+    return render(request,"post_list.html")
