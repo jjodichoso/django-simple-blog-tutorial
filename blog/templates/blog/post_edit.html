@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container pt">
-<div class="row mt centered">	
+<div class="row mt">	
 		<h1>Post</h1>
 		<form method="POST" class="post-form">{% csrf_token %}
 			{{ form.as_p }}

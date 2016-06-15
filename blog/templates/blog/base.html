@@ -33,9 +33,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             {% if user.is_authenticated %}
+            <li><a href="{% url 'about' %}" class="top-menu">About</a></li>
             <li><a href="{% url 'post_new' %}" class="top-menu">New Post</a></li>
             <li><a href="{% url 'post_draft_list' %}" class="top-menu">Drafts</a></li>
-            <li><a href="{% url 'about' %}" class="top-menu">About</a></li>
             <li><a href="{% url 'admin:index' %}" class="top-menu">Admin</a></li>
             <li><a href="{% url 'logout' %}" class="top-menu">Logout</a></li>
             {% else %}

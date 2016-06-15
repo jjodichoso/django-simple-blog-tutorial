@@ -22,6 +22,7 @@
 			<h1>{{ post.title }}</h1>
 			<p>{{ post.text|linebreaks }}</p>
 		</div>
+		{% if post.published_date %}
 		<hr>
 		<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
 		{% for comment in post.comments.all %}
@@ -48,6 +49,7 @@
 
 		No comments here yet.
 		{% endfor %}
+		{% endif %}
 
 	</div>
 </div>
