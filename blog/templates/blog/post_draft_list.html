@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container pt">
+	<div class="row mt centered">	
+		{% for post in posts %}
+		<div class="post">
+		Updated last {{ post.created_date|date:'F d, Y, P' }}
+			<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+			<p>{{ post.text|truncatechars:200 }}</p>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

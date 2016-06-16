@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+ <div class="container pt">
+		<div class="row mt centered">
+			{% if form.errors %}
+			<p>Your username and password didn't match. Please try again.</p>
+			{% endif %}
+
+			<form method="post" action="{% url 'login' %}">
+				{% csrf_token %}
+				{{ form.username.label_tag }}
+				{{ form.username }}
+				&nbsp;
+				{{ form.password.label_tag }}
+				{{ form.password }}
+				&nbsp;
+
+				<input type="submit" class="btn btn-default" value="Login" />
+				<input type="hidden" name="next" value="{{ next }}" />
+			</form>
+		</div>
+</div>
+{% endblock %}
